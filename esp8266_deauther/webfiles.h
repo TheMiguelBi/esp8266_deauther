@@ -49,7 +49,8 @@ if(settings.getWebSpiffs()){
   if(!SPIFFS.exists(String(F("/web/lang/fr.lang.gz"))) || force) progmemToSpiffs(frlang, sizeof(frlang), String(F("/web/lang/fr.lang.gz")));
   if(!SPIFFS.exists(String(F("/web/lang/cn.lang.gz"))) || force) progmemToSpiffs(cnlang, sizeof(cnlang), String(F("/web/lang/cn.lang.gz")));
   if(!SPIFFS.exists(String(F("/web/lang/de.lang.gz"))) || force) progmemToSpiffs(delang, sizeof(delang), String(F("/web/lang/de.lang.gz")));
-    if(!SPIFFS.exists(String(F("/web/LICENSE.gz"))) || force) progmemToSpiffs(LICENSE, sizeof(LICENSE), String(F("/web/LICENSE.gz")));
+  if(!SPIFFS.exists(String(F("/web/lang/it.lang.gz"))) || force) progmemToSpiffs(itlang, sizeof(itlang), String(F("/web/lang/it.lang.gz")));
+  if(!SPIFFS.exists(String(F("/web/LICENSE.gz"))) || force) progmemToSpiffs(LICENSE, sizeof(LICENSE), String(F("/web/LICENSE.gz")));
 }
 #endif
 }
